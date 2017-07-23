@@ -1,0 +1,124 @@
+body{
+ background: linear-gradient(rgba(0,0,0,0.51),rgba(0,0,0,0.51)) #555;
+}
+#loader .animator{
+ background: transparent;
+ width: 100px;
+ height: 100px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ border: 3px solid #6f34df;
+ border-radius: 50%;
+ animation: spin 2s ease-in-out infinite;
+}
+#loader .animator1{
+ background: transparent;
+ width: 100px;
+ height: 100px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ border: 3px solid #fd346f;
+ border-radius: 50%;
+ animation: spina 2s ease-in-out infinite;
+}
+#loader .animator2{
+ background: transparent;
+ width: 100px;
+ height: 100px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ border: 3px solid #fd346f;
+ border-radius: 50%;
+ animation: spinb 2s ease-in-out infinite;
+}
+#loader .animator3{
+ background: #6f34df;
+ width: 50px;
+ height: 50px;
+ position: absolute;
+ top: 46%;
+ left: 48.3%;
+ transform: translate(-50%,-50%);
+ animation: spinc 2s linear infinite;
+}
+#loader .animator4{
+ background: #fd346f;
+ width: 30px;
+ height: 30px;
+ position: absolute;
+ top: 47.5%;
+ left: 49.1%;
+ transform: translate(-50%,-50%);
+ animation: spind 2s linear infinite;
+}
+@keyframes spin{
+ 0%{
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+ }
+ 50%{
+  width: 250px;
+  height: 250px;
+  opacity: 1;
+  }
+  100%{
+   width: 100px;
+   height: 100px;
+   opacity: 0;
+  }
+}
+@keyframes spina{
+ 0%{
+  width: 100px;
+  height: 100px;
+ }
+ 50%{
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  }
+  100%{
+   width: 100px;
+   height: 100px;
+  }
+}
+@keyframes spinb{
+ 0%{
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+ }
+ 50%{
+  width: 150px;
+  height: 150px;
+  opacity:  0;
+  }
+  100%{
+   width: 100px;
+   height: 100px;
+   opacity: 1;
+  }
+}
+@keyframes spinc{
+ 0%{
+  transform: rotate(0deg);
+ }
+ 100%{
+  transform: rotate(360deg);
+ }
+}
+@keyframes spind{
+ 0%{
+  transform: rotate(360deg);
+ }
+ 100%{
+  transform: rotate(0deg);
+ }
+}
